@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LeftRightView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ivP-DX-I7Z">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21t-iX-rhX">
+                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="647"/>
+                            <color key="backgroundColor" white="0.78762478300000005" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="左-1"/>
+                            <state key="highlighted" image="左-2"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3u-dB-Yc9">
+                            <rect key="frame" x="192.5" y="0.0" width="182.5" height="647"/>
+                            <color key="backgroundColor" white="0.78762478300000005" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="右-1"/>
+                            <state key="highlighted" image="右-2"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Q3u-dB-Yc9" firstAttribute="height" secondItem="21t-iX-rhX" secondAttribute="height" id="3Jo-Qv-I0E"/>
+                        <constraint firstItem="Q3u-dB-Yc9" firstAttribute="width" secondItem="21t-iX-rhX" secondAttribute="width" id="Ihp-BR-JHf"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ivP-DX-I7Z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="F6w-tN-HXx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ivP-DX-I7Z" secondAttribute="bottom" id="Fd4-ya-fID"/>
+                <constraint firstItem="ivP-DX-I7Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="trE-io-tSW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ivP-DX-I7Z" secondAttribute="trailing" id="vPb-We-dda"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftBtn" destination="21t-iX-rhX" id="VvE-y7-Z5n"/>
+                <outlet property="rightBtn" destination="Q3u-dB-Yc9" id="s6h-3K-m9Q"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="右-1" width="200" height="200"/>
+        <image name="右-2" width="200" height="200"/>
+        <image name="左-1" width="200" height="200"/>
+        <image name="左-2" width="200" height="200"/>
+    </resources>
+</document>
