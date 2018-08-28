@@ -79,11 +79,6 @@
     
 }
 
-- (void)long1:(UILongPressGestureRecognizer *)long1 {
-    
-    NSLog(@"long1");
-    
-}
 
 - (void)long2:(UILongPressGestureRecognizer *)long2 {
     
@@ -92,7 +87,7 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
